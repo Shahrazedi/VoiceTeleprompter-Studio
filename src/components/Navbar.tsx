@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mic, FileText, FolderArchive, Settings, Moon, Sun, Languages } from 'lucide-react';
 import { AppSettings } from '../types';
+import { PWAInstallBanner } from './PWAInstallBanner';
 
 interface NavbarProps {
   activeTab: 'teleprompter' | 'scripts' | 'recordings';
@@ -94,6 +95,8 @@ export const Navbar: React.FC<NavbarProps> = ({
 
         {/* Zone 3: Primary Actions & Utilities */}
         <div className="flex items-center gap-2 shrink-0">
+          <PWAInstallBanner settings={settings} />
+
           <button
             onClick={toggleLanguage}
             className="p-2 rounded-xl text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-1 text-xs font-bold"
