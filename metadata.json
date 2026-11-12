@@ -1,0 +1,8 @@
+{
+  "name": "VoiceTeleprompter Studio – مسجّل الصوت والتليبرومبتر الاحترافي",
+  "description": "استوديو متكامل لتسجيل الصوت بجودة عالية مع شاشة قراءة النصوص (Teleprompter) المتزامنة. سجل بودكاست، تعليق صوتي، ومحاضرات مع تصدير فوري بصيغ MP3 و WAV.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": []
+}
